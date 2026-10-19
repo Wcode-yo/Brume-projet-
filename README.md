@@ -1,6 +1,6 @@
-# ☕ BRUME — Configurateur de Café Personnalisé
+#  BRUME — Configurateur de Café Personnalisé
 
-## 📌 Présentation du projet
+##  Présentation du projet
 
 **BRUME** est une application web interactive permettant aux clients de créer leur café idéal en personnalisant différents éléments : taille, type de lait et suppléments.
 
@@ -8,7 +8,7 @@ L'objectif est de proposer une expérience utilisateur moderne, intuitive et res
 
 Ce projet est réalisé dans le cadre d'une formation en développement web afin de mettre en pratique **HTML5, CSS3, JavaScript Vanilla, la manipulation du DOM et GitFlow**.
 
-## 🎯 Objectifs du projet
+##  Objectifs du projet
 
 - Créer une interface de personnalisation interactive.
 - Permettre au client de choisir les caractéristiques de son café.
@@ -19,9 +19,9 @@ Ce projet est réalisé dans le cadre d'une formation en développement web afin
 - Garantir une expérience adaptée aux mobiles, tablettes et ordinateurs.
 - Organiser le développement à travers GitFlow et GitHub Projects.
 
-## ✨ Fonctionnalités principales
+##  Fonctionnalités principales
 
-### ☕ Page 1 — Configurateur
+###  Page 1 — Configurateur
 
 L'utilisateur pourra :
 
@@ -32,7 +32,7 @@ L'utilisateur pourra :
 - Consulter le prix total actualisé automatiquement.
 - Valider sa configuration.
 
-### 🛒 Page 2 — Résumé de commande
+###  Page 2 — Résumé de commande
 
 Cette page permettra de :
 
@@ -42,7 +42,7 @@ Cette page permettra de :
 - Vérifier les détails de la commande.
 - Revenir au configurateur pour modifier les choix.
 
-## 🛠️ Technologies utilisées
+##  Technologies utilisées
 
 | Technologie | Utilisation |
 |---|---|
@@ -64,7 +64,7 @@ Cette page permettra de :
 - 📄 **resume.html** — Page récapitulative
 - 📄 **README.md** — Documentation du projet
 
-## 🚀 Étapes de développement
+##  Étapes de développement
 
 ### Étape 0 — Planification et organisation
 
@@ -100,7 +100,7 @@ Cette page permettra de :
 - Navigation vers la page récapitulative.
 - Affichage des données enregistrées.
 
-## 🌿 Workflow GitFlow
+## Workflow GitFlow
 
 Le projet suit une organisation GitFlow.
 
@@ -121,7 +121,7 @@ Le projet suit une organisation GitFlow.
 - Les modifications sont vérifiées avant leur fusion.
 - La branche `main` contient uniquement les versions stables.
 
-## 📋 Gestion des tâches — GitHub Projects
+##  Gestion des tâches — GitHub Projects
 
 Le suivi du projet utilise un tableau Kanban composé de quatre colonnes :
 
@@ -134,7 +134,7 @@ Le suivi du projet utilise un tableau Kanban composé de quatre colonnes :
 
 Cette organisation permet de suivre l'avancement du projet et de faciliter la collaboration.
 
-## 💻 Installation et exécution
+##  Installation et exécution
 
 1. Cloner le repository GitHub.
 2. Ouvrir le dossier du projet avec Visual Studio Code.
@@ -145,19 +145,9 @@ Cette organisation permet de suivre l'avancement du projet et de faciliter la co
 
 Le projet ne nécessite ni backend ni base de données.
 
-## ✅ Critères de validation
 
-- [ ] Les deux pages sont fonctionnelles.
-- [ ] L'interface est responsive.
-- [ ] Les options sont sélectionnables.
-- [ ] L'aperçu est mis à jour dynamiquement.
-- [ ] Le prix change automatiquement.
-- [ ] Les données sont sauvegardées dans `localStorage`.
-- [ ] Le résumé affiche correctement la configuration.
-- [ ] Le workflow GitFlow est respecté.
-- [ ] Les fonctionnalités ont été testées.
 
-## 🔮 Améliorations futures
+##  Améliorations futures
 
 - Ajout de nouvelles boissons.
 - Ajout d'animations lors de la personnalisation.
@@ -165,8 +155,5 @@ Le projet ne nécessite ni backend ni base de données.
 - Gestion d'un panier contenant plusieurs produits.
 - Intégration d'un backend et d'une base de données.
 
-## 👨‍💻 Équipe de développement
-
-Projet réalisé en équipe dans le cadre de la formation en développement web.
 
 **Méthodologie :** Agile, Kanban et GitFlow.
