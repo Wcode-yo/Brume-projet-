@@ -1,7 +1,11 @@
-    *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    }
+    body {
+        background-color: #F3EEE4;
+        font-family: Arial, sans-serif;
     }
     .head1{
     display: flex;
@@ -12,7 +16,7 @@
     align-items: center;
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
-
+    
     
 
     }
@@ -24,11 +28,12 @@
     }
     .nav-1 {
     display: flex;
-    width: 100%;
+    
     height: 92px;
-    background-color:rgba(223, 213, 200, 1) ;
+    background-color:#F3EEE4 ;
     justify-content: space-evenly; 
     align-items: center;
+   border-bottom: 1px solid #e5ded5;
 
     }
 
@@ -49,9 +54,12 @@
         color: green;
     
     }
+
     .container {
         width: 100%;
-        margin: 32px auto;
+      
+       
+        background-color:#F3EEE4;
     }
 
 
@@ -81,7 +89,11 @@
         
     
     }
+.card1{
+background-color: #F3EEE4;
 
+
+}
     .card1,
     .card2 {
         min-width: 0;
@@ -148,7 +160,8 @@
         color: white;
         cursor: pointer;
     }
-        .produit{display: flex;
+        .produit{
+        display: flex;
         justify-content: space-between;
         gap: 16px;
         padding: 12px 0;
@@ -159,16 +172,7 @@
         color: #394b32;   
         text-decoration: none;
         }
-        .ft  {
-        display: flex;
-        width: 100%;
-        height: 92px;
-        background-color:rgba(223, 213, 200, 1) ;
-        justify-content: space-around; 
-        align-items: center;
-        gap: 16px;
-        padding: 0 24px;
-        }
+       
         .p2{
         font-size: 15px;
 
@@ -177,8 +181,8 @@
     .card3 {
         
         padding: 32px;
-        background-color: white;
-        height: 600px;
+        background-color: #F3EEE4;
+        height: auto;
 
     }
     
@@ -210,9 +214,9 @@
   }
   .wzone{
     display: flex;
-    height: 125px;
+    height: 150px;
     width: 100%;
-    background-color: bisque;
+    background-color:white;
     align-items: center;
     justify-content: space-between;
     padding: 24px;
@@ -237,29 +241,70 @@
     margin-top: 60px;
     padding-top: 32px;
     border-top: 1px solid #e5ded5;
-
 }
+
+.Ets {
+    margin-top: 24px;
+}
+
 .choix {
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
 }
 
 .option {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-   flex: 1;
-   border: 1px solid;
-   height: 50px;
-   border-radius: 10px;    
-   
+    flex: 1;
+    min-width: 100px;
+}
+.lastbtn{
+display: flex;
+
+justify-content: space-around;
 }
 
-.option label {
-    display: flex;
-    flex-direction: column;
+.choix-btn {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    border: 1px solid #e5ded5;
+    border-radius: 10px;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: #352f25;
 }
 
+.choix-btn span {
+    display: block;
+}
+
+.choix-btn span + span {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #796a59;
+}
+
+
+
+
+
+
+
+
+
+
+.note-choix {
+    margin-top: 20px;
+}
+#btn-Caramel{
+    width: 286px;
+}
+#btn-Vanille{
+    width: 286px;
+}
 
 @media (max-width: 768px) {
     .secgrid {
@@ -281,7 +326,6 @@
     }
 
     .nav-1,
-    .ft,
     .wzone {
         height: auto;
         padding: 20px;

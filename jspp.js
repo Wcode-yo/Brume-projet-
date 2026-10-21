@@ -27,7 +27,7 @@ let selectedConfig = {
   fini: null
 };
 
-const btn = document.getElementById("ddd")
+const btn = document.getElementById("dd")
 btn.addEventListener("click" , function (){
   btn.style.backgroundColor="green"
   
