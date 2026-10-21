@@ -249,12 +249,17 @@
     align-items: center;
     gap: 8px;
    flex: 1;
+   border: 1px solid;
+   height: 50px;
+   border-radius: 10px;    
+   
 }
 
 .option label {
     display: flex;
     flex-direction: column;
 }
+
 
 @media (max-width: 768px) {
     .secgrid {
