@@ -27,6 +27,8 @@ let selectedConfig = {
   fini: null
 };
 
-const element = document.querySelectorAll("header");
-element.style.backgroundColor ="red";
-
+const btn = document.getElementById("ddd")
+btn.addEventListener("click" , function (){
+  btn.style.backgroundColor="green"
+  
+})
