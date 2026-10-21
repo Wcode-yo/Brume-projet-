@@ -1,21 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brume</title>
     <link rel="stylesheet" href="css/css.css">
 </head>
-<header>
-<div class="head1"><p> Du grain à votre tasse. Un café qui vous ressemble.</p></div>
-<nav class="nav-1">
-<img src="icons/Signature de marque.png" alt="Logo">
-<div class="links">
-<a href="#"><span>L’atelier café</a></span>
-<a href="#">Notre savoir-faire</a>
-<a href="#">Besoin d’aide ?</a>
-</div>
-<div><a href="#"><img src="icons/Panier.png"icons alt="Signature"></a></div>
-<hr>
-</nav>
-</header>
+<body>
+    <header>
+        <div class="head1">
+            <p>Du grain à votre tasse. Un café qui vous ressemble.</p>
+        </div>
+
+        <nav class="nav-1">
+            <img src="icons/Signature de marque.png" alt="Logo Brume">
+
+            <div class="links">
+                <a href="#personnaliser"><span>L’atelier café</span></a>
+                <a href="#">Notre savoir-faire</a>
+                <a href="#">Besoin d’aide ?</a>
+            </div>
+
+            <a href="#recapitulatif">
+                <img src="icons/Panier.png" alt="Panier">
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section>
+            <div class="secgrid">
+                <div class="card1">
+                    <img src="Aperçu produit en direct.png" alt="Aperçu de votre café">
+                </div>
+
+                <div class="card3">
+                    <p class="p1">
+                        <a href="#personnaliser">01 Personnaliser</a> —
+                        <a href="#recapitulatif">02 Récapitulatif</a>
+                    </p>
+                    <p class="p2">VOTRE COFFEE SHOP, AUTREMENT.</p>
+                    <h1 class="hd">Votre pause,<br>votre signature.</h1>
+
+                    <p class="prestyle">
+                        Quelques envies, un café unique.<br>
+                        À vous de composer la suite.
+                    </p>
+
+                    <div class="Ets">
+                        <strong>01 La base</strong>
+                        <span>Choix unique</span>
+                    </div>
+
+                    <div class="choix">
+                        <div class="option">
+                            <input type="radio" id="espresso" name="base" value="espresso" checked>
+                            <label for="espresso">
+                                <span class="nom-option">Espresso</span>
+                                <small>18,00 DH</small>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input type="radio" id="filtre" name="base" value="filtre">
+                            <label for="filtre">
+                                <span class="nom-option">Filtre</span>
+                                <small>16,00 DH</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="Ets">
+                        <strong>02 La taille</strong>
+                        <span>Choix unique</span>
+                    </div>
+
+                    <div class="choix">
+                        <div class="option">
+                            <input type="radio" id="taille-s" name="taille" value="s">
+                            <label for="taille-s">
+                                <span class="nom-option">S · 150 ml</span>
+                                <small>Inclus</small>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input type="radio" id="taille-m" name="taille" value="m" checked>
+                            <label for="taille-m">
+                                <span class="nom-option">M · 250 ml</span>
+                                <small>+ 4,00 DH</small>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input type="radio" id="taille-l" name="taille" value="l">
+                            <label for="taille-l">
+                                <span class="nom-option">L · 350 ml</span>
+                                <small>+ 8,00 DH</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="Ets">
+                        <strong>03 Le lait</strong>
+                        <span>Choix unique</span>
+                    </div>
+
+                    <div class="choix">
+                        <div class="option">
+                            <input type="radio" id="vache" name="lait" value="vache">
+                            <label for="vache">
+                                <span class="nom-option">Vache</span>
+                                <small>Inclus</small>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input type="radio" id="avoine" name="lait" value="avoine" checked>
+                            <label for="avoine">
+                                <span class="nom-option">Avoine</span>
+                                <small>+ 4,00 DH</small>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input type="radio" id="amande" name="lait" value="amande">
+                            <label for="amande">
+                                <span class="nom-option">Amande</span>
+                                <small>+ 5,00 DH</small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="Ets">
+                        <strong>04 La touche en plus</strong>
+                        <span>Plusieurs choix</span>
+                    </div>
+
+                    <div class="choix">
+                        <div class="option">
+                            <input type="checkbox" id="caramel" name="supplement" value="caramel" checked>
+                            <label for="caramel">
+                                <span class="nom-option">Caramel</span>
+                                <small>+ 3,00 DH</small>
+                            </label>
+                        </div>
+
+                        <div class="option">
+                            <input type="checkbox" id="vanille" name="supplement" value="vanille">
+                            <label for="vanille">
+                                <span class="nom-option">Vanille</span>
+                                <small>+ 3,00 DH</small>
+                            </label>
+                        </div>
+                    </div>
+                    <p class="note-choix">Composez votre café, puis consultez votre récapitulatif.</p>
+                </div>
+            </div>
+
+            <div class="wzone">
+                <div>Votre création · Café sur mesure<br><strong>29,00 DH</strong></div>
+                <a class="bouton" href="#recapitulatif">Ajouter au panier →</a>
+            </div>
+        </section>
+
+        <section id="recapitulatif">
+            <p class="p1">
+                <a href="#personnaliser">Personnaliser</a> —
+                <a href="#recapitulatif">Récapitulatif</a>
+            </p>
+            <br>
+            <p class="netfication">VOTRE CRÉATION EST PRÊTE</p>
+            <h1>Votre moment café,<br>exactement comme vous l’aimez.</h1>
+
+            <div class="secgrid">
+                <div class="card1">
+                    <img src="Aperçu produit en direct.png" alt="Votre café signature">
+                    <br>
+                    <h2>Votre café signature</h2>
+
+                    <div class="produit">
+                        <p>Espresso · M · Avoine · Caramel</p>
+                        <a href="#personnaliser">Modifier</a>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <span class="badge">✓ Sélection ajoutée</span>
+                    <h2>Votre récapitulatif</h2>
+                    <p>Une création personnalisée · Quantité : 1</p>
+
+                    <div class="ligne"><span>Base · Espresso</span><strong>18,00 DH</strong></div>
+                    <div class="ligne"><span>Taille · M / 250 ml</span><strong>4,00 DH</strong></div>
+                    <div class="ligne"><span>Lait · Avoine</span><strong>4,00 DH</strong></div>
+                    <div class="ligne"><span>Supplément · Caramel</span><strong>3,00 DH</strong></div>
+
+                    <div class="ligne total"><strong>Total</strong><strong>29,00 DH</strong></div>
+
+                    <a class="bouton" href="#personnaliser">Créer un autre café →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="ft">
+        <div class="be">BRUME — Le goût de votre rythme.</div>
+        <div class="uv">Une création unique, la vôtre.</div>
+    </footer>
+</body>
+</html>
