@@ -50,8 +50,8 @@
     
     }
     .container {
-        width: 90%;
-        max-width: 1440px;
+        width: 100%;
+    
         margin: 32px auto;
     }
 
@@ -149,7 +149,8 @@
         color: white;
         cursor: pointer;
     }
-        .produit{display: flex;
+        .produit{
+        display: flex;
         justify-content: space-between;
         gap: 16px;
         padding: 12px 0;
@@ -180,6 +181,7 @@
         padding: 32px;
         background-color: white;
         height: 600px;
+      
 
     }
     
@@ -243,10 +245,10 @@
 .option{
 display: flex;
 justify-content: space-between;
-
+gap: 10px;
 }
 
-@media (max-width: 768px) {
+@media ( max-width: 600px) {
     .secgrid {
         grid-template-columns: 1fr;
         gap: 24px;
