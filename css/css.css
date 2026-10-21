@@ -50,8 +50,7 @@
     
     }
     .container {
-        width: 90%;
-        max-width: 1440px;
+        width: 100%;
         margin: 32px auto;
     }
 
@@ -240,10 +239,21 @@
     border-top: 1px solid #e5ded5;
 
 }
-.option{
-display: flex;
-justify-content: space-between;
+.choix {
+    display: flex;
+    gap: 16px;
+}
 
+.option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+   flex: 1;
+}
+
+.option label {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 768px) {

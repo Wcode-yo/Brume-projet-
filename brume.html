@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brume</title>
     <link rel="stylesheet" href="css/css.css">
+     <script src="js.js" ></script>
 </head>
 <body>
     <header>
@@ -46,21 +47,21 @@
                         Quelques envies, un café unique.<br>
                         À vous de composer la suite.
                     </p>
-
+<br>
                     <div class="Ets">
                         <strong>01 La base</strong>
                         <span>Choix unique</span>
                     </div>
-
+<br>
                     <div class="choix">
                         <div class="option">
                             <input type="radio" id="espresso" name="base" value="espresso" checked>
                             <label for="espresso">
                                 <span class="nom-option">Espresso</span>
-                                <small>18,00 DH</small>
+                                <small id="prix">18,00 DH</small>
                             </label>
                         </div>
-
+<br>
                         <div class="option">
                             <input type="radio" id="filtre" name="base" value="filtre">
                             <label for="filtre">
@@ -69,12 +70,12 @@
                             </label>
                         </div>
                     </div>
-
+<br>
                     <div class="Ets">
                         <strong>02 La taille</strong>
                         <span>Choix unique</span>
                     </div>
-
+<br>
                     <div class="choix">
                         <div class="option">
                             <input type="radio" id="taille-s" name="taille" value="s">
@@ -83,7 +84,7 @@
                                 <small>Inclus</small>
                             </label>
                         </div>
-
+<br>
                         <div class="option">
                             <input type="radio" id="taille-m" name="taille" value="m" checked>
                             <label for="taille-m">
@@ -91,7 +92,7 @@
                                 <small>+ 4,00 DH</small>
                             </label>
                         </div>
-
+<br>
                         <div class="option">
                             <input type="radio" id="taille-l" name="taille" value="l">
                             <label for="taille-l">
@@ -100,12 +101,12 @@
                             </label>
                         </div>
                     </div>
-
+<br>
                     <div class="Ets">
                         <strong>03 Le lait</strong>
                         <span>Choix unique</span>
                     </div>
-
+<br>
                     <div class="choix">
                         <div class="option">
                             <input type="radio" id="vache" name="lait" value="vache">
@@ -114,7 +115,7 @@
                                 <small>Inclus</small>
                             </label>
                         </div>
-
+<br>
                         <div class="option">
                             <input type="radio" id="avoine" name="lait" value="avoine" checked>
                             <label for="avoine">
@@ -122,7 +123,7 @@
                                 <small>+ 4,00 DH</small>
                             </label>
                         </div>
-
+<br>
                         <div class="option">
                             <input type="radio" id="amande" name="lait" value="amande">
                             <label for="amande">
@@ -131,12 +132,12 @@
                             </label>
                         </div>
                     </div>
-
+<br>
                     <div class="Ets">
                         <strong>04 La touche en plus</strong>
                         <span>Plusieurs choix</span>
                     </div>
-
+<br>
                     <div class="choix">
                         <div class="option">
                             <input type="checkbox" id="caramel" name="supplement" value="caramel" checked>
@@ -145,7 +146,7 @@
                                 <small>+ 3,00 DH</small>
                             </label>
                         </div>
-
+<br>
                         <div class="option">
                             <input type="checkbox" id="vanille" name="supplement" value="vanille">
                             <label for="vanille">
@@ -154,6 +155,7 @@
                             </label>
                         </div>
                     </div>
+                    <br>
                     <p class="note-choix">Composez votre café, puis consultez votre récapitulatif.</p>
                 </div>
             </div>
