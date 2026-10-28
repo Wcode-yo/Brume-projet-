@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brume</title>
     <link rel="stylesheet" href="css/css.css">
+    <script src="js/js.js" defer></script>
+   
 </head>
 <body>
     <header>
@@ -27,8 +29,10 @@
         </nav>
     </header>
 
+
+
     <main class="container">
-        <section>
+        <section id="personnaliser" >
             <div class="secgrid">
                 <div class="card1">
                     <img src="Aperçu produit en direct.png" alt="Aperçu de votre café">
@@ -39,128 +43,112 @@
                         <a href="#personnaliser">01 Personnaliser</a> —
                         <a href="#recapitulatif">02 Récapitulatif</a>
                     </p>
+                    <br>
                     <p class="p2">VOTRE COFFEE SHOP, AUTREMENT.</p>
                     <h1 class="hd">Votre pause,<br>votre signature.</h1>
-
                     <p class="prestyle">
                         Quelques envies, un café unique.<br>
                         À vous de composer la suite.
                     </p>
-
-                    <div class="Ets">
+                    <br>
+                     <div class="Ets">
                         <strong>01 La base</strong>
                         <span>Choix unique</span>
                     </div>
-
-                    <div class="choix">
+                      <div id="configurateur">
+                         <div class="choix">
                         <div class="option">
-                            <input type="checkbox" id="espresso" name="base" value="espresso" checked>
-                            <label for="espresso">
-                                <span class="nom-option">Espresso</span>
-                                <small>18,00 DH</small>
-                            </label>
+                            <button onclick="choisirEspresso()" class="choix-btn" id="btn-espresso" type="button">
+                                <span id="espresso-name">Espresso</span>
+                                <span id="espresso-price">18,00 DH</span>
+                            </button>
                         </div>
-
                         <div class="option">
-                            <input type="checkbox" id="filtre" name="base" value="filtre">
-                            <label for="filtre">
-                                <span class="nom-option">Filtre</span>
-                                <small>16,00 DH</small>
-                            </label>
+                            <button  onclick="choisirFiltre()" class="choix-btn" id="btn-Filtre" type="button">
+                                <span id="filtre-name">Filtre</span>
+                                <span id="filtre-price">16,00 DH</span>
+                            </button>
                         </div>
                     </div>
-
                     <div class="Ets">
                         <strong>02 La taille</strong>
                         <span>Choix unique</span>
                     </div>
-
+                    <br>
+                  
                     <div class="choix">
                         <div class="option">
-                            <input type="checkbox" id="taille-s" name="taille" value="s">
-                            <label for="taille-s">
-                                <span class="nom-option">S · 150 ml</span>
-                                <small>Inclus</small>
-                            </label>
+                            <button onclick="choisirTaille_S()" class="choix-btn" id="btn-taille-s" type="button">
+                                <span id="taille-s-name">S · 150 ml</span>
+                                <span id="taille-s-price">Inclus</span>
+                            </button>
                         </div>
-
                         <div class="option">
-                            <input type="checkbox" id="taille-m" name="taille" value="m" checked>
-                            <label for="taille-m">
-                                <span class="nom-option">M · 250 ml</span>
-                                <small>+ 4,00 DH</small>
-                            </label>
+                            <button  onclick="choisirTaille_m()"class="choix-btn" id="btn-taille-m" type="button">
+                                <span id="taille-m-name">M · 250 ml</span>
+                                <span id="taille-m-price">+ 4,00 DH</span>
+                            </button>
                         </div>
-
                         <div class="option">
-                            <input type="checkbox" id="taille-l" name="taille" value="l">
-                            <label for="taille-l">
-                                <span class="nom-option">L · 350 ml</span>
-                                <small>+ 8,00 DH</small>
-                            </label>
+                            <button onclick="choisirTaille_l()"class="choix-btn" id="btn-taille-l" type="button">
+                                <span id="taille-l-name">L · 350 ml</span>
+                                <span id="taille-l-price">+ 8,00 DH</span>
+                            </button>
                         </div>
                     </div>
-
+                    <br>
                     <div class="Ets">
                         <strong>03 Le lait</strong>
                         <span>Choix unique</span>
                     </div>
-
-                    <div class="choix">
+                 <div class="choix">
                         <div class="option">
-                            <input type="checkbox" id="vache" name="lait" value="vache">
-                            <label for="vache">
-                                <span class="nom-option">Vache</span>
-                                <small>Inclus</small>
-                            </label>
+                            <button onclick="choisirvache()" class="choix-btn" id="btn-vache" type="button">
+                                <span id="vache-name">Vache</span>
+                                <span id="vache-price">Inclus</span>
+                            </button>
                         </div>
-
                         <div class="option">
-                            <input type="checkbox" id="avoine" name="lait" value="avoine" checked>
-                            <label for="avoine">
-                                <span class="nom-option">Avoine</span>
-                                <small>+ 4,00 DH</small>
-                            </label>
+                            <button onclick="choisiravoine()" class="choix-btn" id="btn-avoine" type="button">
+                                <span id="avoine-name">Avoine</span>-
+                                <span id="avoine-price">+ 4,00 DH</span>
+                            </button>
                         </div>
-
                         <div class="option">
-                            <input type="checkbox" id="amande" name="lait" value="amande">
-                            <label for="amande">
-                                <span class="nom-option">Amande</span>
-                                <small>+ 5,00 DH</small>
-                            </label>
+                            <button onclick= "choisirAmande()"  class="choix-btn" id="btn-amande" type="button">
+                                <span id="amande-name">Amande</span>
+                                <span id="amande-price">+ 5,00 DH</span>
+                            </button>
                         </div>
                     </div>
-
+                    <br>
                     <div class="Ets">
                         <strong>04 La touche en plus</strong>
                         <span>Plusieurs choix</span>
                     </div>
-
                     <div class="choix">
                         <div class="option">
-                            <input type="checkbox" id="caramel" name="supplement" value="caramel" checked>
-                            <label for="caramel">
-                                <span class="nom-option">Caramel</span>
-                                <small>+ 3,00 DH</small>
-                            </label>
+                            <button onclick="choisircaramel()" class="choix-btn" id="btn-amande" type="button">
+                                <span id="caramel-name">Caramel</span>
+                                <span id="caramel-name">+ 3,00 DH</span>
+                            </button>
+                       
                         </div>
-
                         <div class="option">
-                            <input type="checkbox" id="vanille" name="supplement" value="vanille">
-                            <label for="vanille">
-                                <span class="nom-option">Vanille</span>
-                                <small>+ 3,00 DH</small>
-                            </label>
+                            <button onclick="choisirVanille()" class="choix-btn" id="btn-" type="button">
+                                <span id="vanille-name">Vanille</span>
+                                <span id="Vannile-price">+ 3,00 DH</span>
+                            </button>
                         </div>
                     </div>
+                    </div>
+                    <br>
                     <p class="note-choix">Composez votre café, puis consultez votre récapitulatif.</p>
                 </div>
             </div>
-
             <div class="wzone">
-                <div>Votre création · Café sur mesure<br><strong>29,00 DH</strong></div>
-                <a class="bouton" href="#recapitulatif">Ajouter au panier →</a>
+                <div>Votre création · Café sur mesure<br><strong class="strprix">00,00 DH</strong></div>
+                <a class="bouton" id="btn1" href="#recapitulatif">Ajouter au panier →</a>
             </div>
         </section>
 
@@ -171,41 +159,106 @@
             </p>
             <br>
             <p class="netfication">VOTRE CRÉATION EST PRÊTE</p>
+            <br>
             <h1>Votre moment café,<br>exactement comme vous l’aimez.</h1>
-
-            <div class="secgrid">
-                <div class="card1">
-                    <img src="Aperçu produit en direct.png" alt="Votre café signature">
-                    <br>
-                    <h2>Votre café signature</h2>
-
-                    <div class="produit">
-                        <p>Espresso · M · Avoine · Caramel</p>
-                        <a href="#personnaliser">Modifier</a>
-                    </div>
+    <div class="secgrid">
+     <div class="card1">
+                    <img src="Aperçu produit en direct.png" alt="Aperçu de votre café">
                 </div>
-
-                <div class="card2">
-                    <span class="badge">✓ Sélection ajoutée</span>
-                    <h2>Votre récapitulatif</h2>
+             <div class="card2" id="details-recu">
+                    <span class="reçu">✓ Sélection ajoutée</span>
+                    <h2>Votre reçu</h2>
                     <p>Une création personnalisée · Quantité : 1</p>
+                    <div class="ligne" id="ligne-base"></div>
+                    <div class="ligne" id="ligne-taille"></div>
+                    <div class="ligne" id="ligne-lait"></div>
+                    <div id="lignes-supplements"></div>
 
-                    <div class="ligne"><span>Base · Espresso</span><strong>18,00 DH</strong></div>
-                    <div class="ligne"><span>Taille · M / 250 ml</span><strong>4,00 DH</strong></div>
-                    <div class="ligne"><span>Lait · Avoine</span><strong>4,00 DH</strong></div>
-                    <div class="ligne"><span>Supplément · Caramel</span><strong>3,00 DH</strong></div>
-
-                    <div class="ligne total"><strong>Total</strong><strong>29,00 DH</strong></div>
-
-                    <a class="bouton" href="#personnaliser">Créer un autre café →</a>
+                    <div class="ligne total">
+                        <strong>Total</strong>
+                        <strong id="total-recu">0,00 DH</strong>
+               
+                    <a class="bouton" id="btn2" href="#personnaliser">Créer un autre café →</a>
+                    <a class="bouton" id="btn3" href="#carte_bank">Valider votre choix</a>
                 </div>
-            </div>
+             </section>
+<section id="carte_bank" >
+    <form>
+    <div class="card2">
+    <span class="Cart bank">Carte bancaire ou débit</span>
+    <p>* Indique un champ requis</p>
+
+    <div class="Nmr">
+        <label for="numero">Numéro de carte*</label>
+        <input
+            id="numero"
+            class="choix-btn"
+            type="text"
+            placeholder="Numéro de carte"
+            name="numero"
+            inputmode="numeric"
+            required
+        >
+    </div>
+
+    <div class="dc">
+        <div>
+            <label for="expiration">Date d'expiration*</label>
+            <input
+                id="expiration"
+                class="choix-btn"
+                type="month"
+                name="expiration"
+                required
+            >
+        </div>
+
+        <div>
+            <label for="cvc">Code de sécurité (CVC)*</label>
+            <input
+                id="cvc"
+                class="choix-btn"
+                type="text"
+                placeholder="CVC"
+                name="cvc"
+                inputmode="numeric"
+                pattern="[0-9]"
+                maxlength="3"
+                required
+            >
+        </div>
+    </div>
+
+    <div class="Pac">
+        <div>
+            <label for="pays">Pays</label>
+            <input
+                id="pays"
+                type="text"
+                placeholder="Votre pays"
+                name="pays"
+                required
+            >
+        </div>
+
+        <div>
+          <label for="postal">Code postal*</label>
+         <input
+        id="postal"
+        type="text"
+        placeholder="Code postal"
+        name="postal"
+        required
+        >
+        </div>
+        </div>
+
+        <button class="bouton" type="submit">
+        FINALISER L'ACHAT
+        </button>
+        </form>
+        </div>
         </section>
     </main>
-
-    <footer class="ft">
-        <div class="be">BRUME — Le goût de votre rythme.</div>
-        <div class="uv">Une création unique, la vôtre.</div>
-    </footer>
-</body>
+    </body>
 </html>

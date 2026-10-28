@@ -1,234 +1,87 @@
-    *{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-    .head1{
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #352f25;
+    width: auto;
+    height: auto;
+}
+
+
+.head1 {
     display: flex;
     justify-content: center;
-    background-color: rgba(57, 75, 50, 1);
-    width: 100% ;
-    height: 32px;
     align-items: center;
-    font-family: 'DM Sans', sans-serif;
-    font-style: normal;
-
-    
-
-    }
-
-    .head1 p{
-
-    color: rgba(255, 255, 255, 1)
-
-    }
-    .nav-1 {
-    display: flex;
     width: 100%;
-    height: 92px;
-    background-color:rgba(223, 213, 200, 1) ;
-    justify-content: space-evenly; 
-    align-items: center;
+    min-height: 32px;
+    padding: 8px;
+    background-color: #394b32;
+    text-align: center;
+}
 
-    }
+.head1 p {
+    color: white;
+    font-size: 13px;
+}
 
-    .links{
+.nav-1 {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 92px;
+    padding: 16px;
+    gap: 24px;
+    background-color: #f3eee4;
+    border-bottom: 1px solid #e5ded5;
+}
+
+.nav-1 > img {
+    max-width: 150px;
+    height: auto;
+}
+
+.links {
+    display: flex;
+    align-items: center;
     gap: 14px;
+}
+
+.links a {
+    color: #796a59;
     text-decoration: none;
-    align-items: center;
+}
 
-    }
-    .links a {
-    font-family: sans-serif;
-    color:rgba(121, 106, 89, 1);
-    text-decoration: none;
-
-    }
-    .links a:hover{
-        color: green;
-    
-    }
-    .container {
-        width: 100%;
-    
-        margin: 32px auto;
-    }
+.links a:hover {
+    color: #394b32;
+}
 
 
-    .p1{
+
+.container {
+    width: 100%;
+    background-color: #f3eee4;
+}
+
+.secgrid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 48px;
+}
+
+.card1,
+.card2,
+.card3 {
+    min-width: 0;
+}
+
+.p1 {
     font-size: 14px;
-    color: rgba(57, 75, 50, 1);
-    align-items: center;
-
-    } 
-
-    .netfication{
-        margin-bottom: 8px;
-        font-size: 12px;
-        color: #394b32;
-    }
-
-    .container h1 {
-        margin-bottom: 24px;
-        font-size: 48px;
-        line-height: 1.1;
-    }
-
-    .secgrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 48px;
-        
-    
-    }
-
-    .card1,
-    .card2 {
-        min-width: 0;
-    }
-
-    .card1 img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 16px;
-        
-    }
-
-    .produit {
-        margin-top: 16px;
-    }
-
-    .card2 {
-        padding: 32px;
-        background-color: white;
-        border: 1px solid #e5ded5;
-        border-radius: 16px;
-        height: 600px;
-    }
-
-    .badge {
-        display: inline-block;
-        padding: 8px 12px;
-        background-color: #e8eedf;
-        color: #394b32;
-        border-radius: 20px;
-    }
-
-    .card2 h2 {
-        margin: 18px 0;
-    }
-
-    .card2 > p {
-        margin-bottom: 20px;
-    }
-
-    .ligne {
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        padding: 12px 0;
-        border-bottom: 1px solid #e5ded5;
-    }
-
-    .total {
-        margin-top: 12px;
-        border-bottom: 0;
-        font-size: 18px;
-    }
-
-    .bouton {
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-        padding: 14px;
-        border: 0;
-        border-radius: 8px;
-        background-color: #394b32;
-        color: white;
-        cursor: pointer;
-    }
-        .produit{
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        padding: 12px 0;
-        border-bottom: 1px solid #e5ded5;
-        }
-        
-        .produit a {
-        color: #394b32;   
-        text-decoration: none;
-        }
-        .ft  {
-        display: flex;
-        width: 100%;
-        height: 92px;
-        background-color:rgba(223, 213, 200, 1) ;
-        justify-content: space-around; 
-        align-items: center;
-        gap: 16px;
-        padding: 0 24px;
-        }
-        .p2{
-        font-size: 15px;
-
-        }
-        
-    .card3 {
-        
-        padding: 32px;
-        background-color: white;
-        height: 600px;
-      
-
-    }
-    
-    .hd{
-        font-family: 'Playfair Display', serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 48px;
-}
-.prestyle{
-      font-family: sans-serif;
-      color:rgba(121, 106, 89, 1);
-
-}
-.Ets {
-  display: flex;
- 
- 
-  justify-content: space-between;
- 
-}
-.Ets strong{
-     font-family: 'DM Sans', sans-serif;
-}
-  .Ets span{
-    padding: 0;
-    font-family: 'DM Sans', sans-serif;
-   
-  }
-  .wzone{
-    display: flex;
-    height: 125px;
-    width: 100%;
-    background-color: bisque;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px;
-    gap: 16px;
-  }
-  .wzone strong{
-    width: 130px;
-    
-  }
-
-.card2 .bouton {
-    width: 100%;
-    margin-top: 16px;
+    color: #394b32;
+    line-height: 1.6;
 }
 
 .p1 a {
@@ -236,50 +89,341 @@
     text-decoration: none;
 }
 
+.p2 {
+    font-size: 15px;
+}
+
+.container h1 {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+
+
+.card1 {
+    background-color: #f3eee4;
+}
+
+.card1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.card3 {
+    padding: 32px;
+    background-color: #f3eee4;
+}
+
+.hd {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.prestyle {
+    color: #796a59;
+    line-height: 1.6;
+}
+
+.Ets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.Ets strong,
+.Ets span {
+    font-family: "DM Sans", Arial, sans-serif;
+}
+
+.Ets span {
+    font-size: 13px;
+    color: #796a59;
+}
+
+.choix {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.option {
+    flex: 1;
+    min-width: 100px;
+}
+
+.choix-btn {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    border: 1px solid #e5ded5;
+    border-radius: 16px;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+    font: inherit;
+    color: #352f25;
+}
+
+
+
+.choix-btn span {
+    display: block;
+}
+
+.choix-btn span + span {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #796a59;
+}
+
+.note-choix {
+    margin-top: 16px;
+    color: #796a59;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+.wzone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+}
+
+.wzone strong {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 22px;
+    color: #394b32;
+}
+
+
+
+.bouton {
+    display: inline-block;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #394b32;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
 #recapitulatif {
-    margin-top: 60px;
-    padding-top: 32px;
+    padding: 32px;
     border-top: 1px solid #e5ded5;
-
-}
-.option{
-display: flex;
-justify-content: space-between;
-gap: 10px;
 }
 
-@media ( max-width: 600px) {
+.netfication {
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: #394b32;
+}
+
+.card2 {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #dfd5c8;
+    border-radius: 18px;
+    color: #394b32;
+}
+
+.reçu {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #e8eedf;
+    color: #394b32;
+    border-radius: 20px;
+}
+
+.card2 h2 {
+    margin: 18px 0;
+}
+
+.card2 > p {
+    margin-bottom: 25px;
+    font-size: 13px;
+    color: #796a59;
+    line-height: 1.6;
+}
+
+.ligne {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5ded5;
+}
+
+.ligne strong {
+    white-space: nowrap;
+}
+
+.total {
+    margin-top: 12px;
+    border-bottom: none;
+    font-size: 18px;
+}
+
+.card2 .bouton {
+    width: 100%;
+    margin-top: 16px;
+    padding: 16px;
+}
+
+.produit {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5ded5;
+}
+
+.produit a {
+    color: #394b32;
+    text-decoration: none;
+}
+
+
+
+.card2 .bank {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card2 label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.card2 input {
+    width: 100%;
+    min-width: 0;
+    height: 48px;
+    padding: 12px;
+    border: 1px solid #cfc5b8;
+    border-radius: 9px;
+    background-color: white;
+    color: #352f25;
+    font: inherit;
+    font-size: 14px;
+    cursor: text;
+}
+
+.card2 input:focus {
+    outline: 2px solid #394b32;
+    outline-offset: 2px;
+}
+
+.Nmr {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.choix-btn:hover {
+    background-color: #394b32;
+    color: white;
+}
+
+.dc,
+.Pac {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.dc > div,
+.Pac > div {
+    flex: 1;
+    min-width: 0;
+}
+.grid{
+display: grid;
+    grid-template-columns: 1fr,1fr;
+    gap: 48px;
+}
+
+
+
+
+@media (max-width: 768px) {
     .secgrid {
         grid-template-columns: 1fr;
         gap: 24px;
-    }
-
-    .card2,
-    .card3 {
-        height: auto;
-    }
-
-    .card3 {
-        padding: 0;
     }
 
     .container h1 {
         font-size: 32px;
     }
 
+    .card3 {
+        padding: 24px;
+    }
+
     .nav-1,
-    .ft,
     .wzone {
-        height: auto;
-        padding: 20px;
         flex-wrap: wrap;
+        min-height: auto;
+        padding: 20px;
         gap: 16px;
     }
 
-    .head1 {
-        height: auto;
-        min-height: 32px;
-        padding: 8px;
-        text-align: center;
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #recapitulatif {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dc,
+    .Pac {
+        flex-direction: column;
+    }
+
+    .card2 {
+        padding: 20px;
+    }
+
+    #recapitulatif {
+        padding: 16px;
+    }
+
+    .Ets {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .wzone .bouton {
+        width: 100%;
     }
 }
